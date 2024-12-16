@@ -1,0 +1,16 @@
+
+#gameboard{
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 100px);
+    width: 300px;
+    height: 300px;
+}
+
+/* .cell{
+    position: relative;
+}
+
+.cell:hover{
+    cursor: pointer;
+} */
