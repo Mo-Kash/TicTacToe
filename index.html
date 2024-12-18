@@ -3,43 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TicTacToe</title>
     <script src="tictactoe.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
     <body>
         <div class="header">
             <div class="title">
-
+                <p style="font-size: 2.5rem; font-weight: 300;"><u>Tic Tac Toe</u></p>
+                <p><i>Re-enter names to start a new game</i></p>
             </div>
-            <div id="rules">
-
+            <div class="input">
+                <form action="" id="playernames">
+                    <label for="p1name">Player 1: </label>
+                    <input type="text" id="p1name">
+                    <label for="p2name">Player 2: </label>
+                    <input type="text" id="p2name">
+                    <button type="submit" id="submitbtn" value="Submit">Start Game</button>
+                </form>
             </div>
-            <div id="p1name">
-
-            </div>
-            <div id="p2name">
-
+            <div class="reset">
+                <button id="resetbtn">Reset Gameboard</button>
             </div>
         </div>
         <div class="center">
-            <div id="player1">
-
-            </div>
-            <div id="gameboard">
-
-            </div>
-            <div id="player2">
-
-            </div>
+            <div id="player1"></div>
+            <div id="gameboard"></div>
+            <div id="player2"></div>
         </div>
         <div class="footer">
-            <div id="result">
-
-            </div>
-            <div class="reset">
-                <button id="resetbtn">Reset</button>
-            </div>
+            <div id="result"></div>
+            <div class="watermark">© Mo-Kash, 2024.</div>
         </div>
     </body>
 </html>
